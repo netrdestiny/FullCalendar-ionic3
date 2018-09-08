@@ -36,7 +36,7 @@ export class HomePage {
       allDay : true,
       eventClick: (event) => {
         console.log(event);
-        alert('Event Clicked');
+        alert('Event Clicked \n'+ 'Event Name : '+ event.title);
       },
       dayClick: (date, jsEvent, view, resourceObj) => {
        console.log('Date: ' + date.format());
